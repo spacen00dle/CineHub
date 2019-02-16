@@ -1,197 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->	
+<html>
+<head>
+<title>CineHub.com | Movies, Tickets, Trailers</title>
 
-  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+    <!-- Footer icon -->
+    <link rel="stylesheet" href="css/footer.css">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="keywords" content="footer, address, phone, icons" />
+    <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/feedback.js"></script>	
 	
-    <title>HubPlex.com | Movies, Tickets, Trailers</title>
-	<link rel="stylesheet" href="css/demo.css">
-	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
 	
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
-	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-    <!-- Custom styles for this template -->
-    <link href="css/modern-business.css" rel="stylesheet">
 
-  </head>
+                                      <!-- Navigation -->
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="menu_nav">
+        <ul>
+          <li><a href="mainpage.html"><span>Home Page</span></a></li>
+          <li><a href="Information.html"><span>Information</span></a></li>
+          <li><a href="about.html"><span>About Us</span></a></li>
+          <li class="active"><a href="feedback.html"><span>Feedback</span></a></li>
+          <li><a href="login.html"><span>Login</span></a></li>
+        </ul>
+   </div>
+     <div class="logo">
+        <h1><a href="mainpage.html"><span>CineHub</span> <small>&nbsp;CineHub.com</small></a></h1>
 
-  <body>
+     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="mainpage.html">HubPlex</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="information.html">Information</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="feedback.html">Feedback</a>
-            </li>
-			 <li class="nav-item">
-              <a class="nav-link" href="login.html">Login</a>
-            </li>
 
-              </div>
-          </ul>
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+        <div class="article">
+          <div class="clr"></div>
         </div>
-      </div>
-    </nav>
 
 
-    <!-- Page Content -->
-    <div class="container">
+        <h2><span>Feedback Form</span></h2>
 
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Give Us Your
-        <small>Feedback</small>
-      </h1>
+        <div class="container">
+          <form action="confirm-feedback.html">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+           
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+			
+			<label for="email">E - mail</label>
+            <input type="text" id="email" name="e-mail" placeholder="Your e-mail">
+		
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
 
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="mainpage.html">Home</a>
-        </li>
-        <li class="breadcrumb-item active">Feedback</li>
-      </ol>
-
-
-
-      <!-- /.row -->
-
-      <!-- Contact Form -->
-      <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-      <div class="row">
-        <div class="col-lg-8 mb-4">
-          <h3>Send us a Message</h3>
-          <form name="sentMessage" id="contactForm" novalidate>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Full Name:</label>
-                <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
-                <p class="help-block"></p>
-              </div>
-            </div>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Phone Number:</label>
-                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
-              </div>
-            </div>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Email Address:</label>
-                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
-              </div>
-            </div>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Message:</label>
-                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
-              </div>
-            </div>
-            <div id="success"></div>
-            <!-- For success/fail messages -->
-            <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <input type="submit" value="Submit" class ="button">
           </form>
         </div>
 
+
+
+        <div class="article">
+          <br>
+          <div class="clr"></div>
+
+        </div>
       </div>
-      <!-- /.row -->
 
+
+
+
+
+
+
+                            <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="searchform"></div>
+        <div class="clr"></div>
+        <div class="gadget">
+          <h2 class="star"><span>Sidebar</span> Menu</h2>
+          <div class="clr"></div>
+          <ul class="sb_menu">
+            <li><a href="mainpage.html">Home</a></li>
+            <li><a href="Information.html">Information</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="active" ><a href="feedback.html">Feedback</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="clr"></div>
     </div>
-    <!-- /.container -->
+  </div>
 
-    <!-- Footer -->
-		<footer class="footer-distributed">
 
-			<div class="footer-left">
 
-				<h3>Hub<span>Plex</span></h3>
 
-				<p class="footer-links">
-					<a href="#">Wael Aiden Waadallah - n01095260</a>
-					·
-					<a href="#">Dario Qinami - n12345678</a>
-					·
-					<a href="#">Lee - n12345678</a>
-					·
-					<a href="#">Elis - n12345678</a>
 
-				</p>
 
-				<p class="footer-company-name">HubPlex &copy; 2019</p>
-			</div>
-
-			<div class="footer-center">
-
+                            <!-- Footer -->
+	  <footer class="footer-distributed">
+			  <div class="footer-left">
+				    <h3>Cine<span>Hub</span></h3>
+				    <p class="footer-links">
+                  <a href="#">Wael Aiden Waadallah - n01095260</a>
+                  ·
+                  <a href="#">Dario Qinami - n12345678</a>
+                  ·
+                  <a href="#">Lee - n01267500</a>
+                  ·
+                  <a href="#">Elias - n01114446</a>
+            </p>
+            <p class="footer-company-name">CineHub &copy; 2019</p>
+		  	</div>
+		  	<div class="footer-center">
 				<div>
-					<i class="fa fa-map-marker"></i>
-					<p><span>259 Richmond St W</span> Toronto, ON</p>
+                  <i class="fa fa-map-marker"></i>
+                  <p><span>259 Richmond St W</span> Toronto, ON</p>
 				</div>
-
 				<div>
-					<i class="fa fa-phone"></i>
-					<p>(123) 456-7890</p>
+                  <i class="fa fa-phone"></i>
+                  <p>(123) 456-7890</p>
 				</div>
-
 				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">hubplex@gmail.com</a></p>
+                  <i class="fa fa-envelope"></i>
+                  <p><a href="mailto:support@company.com">cinehub@gmail.com</a></p>
 				</div>
-
-			</div>
-
-			<div class="footer-right">
-
-				<p class="footer-company-about">
-					<span>About the company</span>
-					is a Canadian entertainment company headquartered in Toronto, Ontario. Through its operating subsidiary HubPlex Entertainment LP, 
-					HubPlex operates 165 theatres making it the largest movie theatre chain across Canada.
-				</p>
-
-				<div class="footer-icons">
-
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
-
-				</div>
+		  	</div>
+	  		<div class="footer-right">
+                  <p class="footer-company-about">
+                    <span>About the company</span>
+                    CineHub is a Canadian entertainment company headquartered in Toronto, Ontario.
+                  </p>
 
 			</div>
-
 		</footer>
-
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Contact form JavaScript -->
-    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
   </body>
-
 </html>
