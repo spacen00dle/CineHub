@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="css/footer.css">
 
     <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
-	<script type="text/javascript" src="js/feedback.js"></script>	
-	
-	
+	<script type="text/javascript" src="js/feedback.js"></script>
+
+
 
 </head>
 
@@ -50,22 +50,30 @@
         <div class="container">
           <form action="confirm-feedback.html">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-           
+            <input type="text" id="fname" name="firstname" placeholder="Your First Name">
+            <div class="error">This is a requierd field</div><br>
+
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-			
-			<label for="email">E - mail</label>
-            <input type="text" id="email" name="e-mail" placeholder="Your e-mail">
-		
+            <input type="text" id="lname" name="lastname" placeholder="Your Last Name">
+
+			<label for="email">e-mail</label>
+            <input type="text" id="email" name="e-mail" placeholder="Your e-mail address">
+
             <label for="country">Country</label>
             <select id="country" name="country">
               <option value="canada">Canada</option>
               <option value="usa">USA</option>
             </select>
 
+            <label for="clean1">How clean was our lobby/concession areas?</label><br>
+              <input type="radio" name="clean1" value="1">1 (Terrible) &nbsp;
+              <input type="radio" name="clean1" value="2">2 &nbsp;
+              <input type="radio" name="clean1" value="3">3 &nbsp;
+              <input type="radio" name="clean1" value="4">4 &nbsp;
+              <input type="radio" name="clean1" value="5">5 (Great)<br><br>
+
             <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <textarea id="subject" name="subject" placeholder="Tell us what you think of our services .. " style="height:200px"></textarea>
             <input type="submit" value="Submit" class ="button">
           </form>
         </div>
