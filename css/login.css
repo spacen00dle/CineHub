@@ -43,7 +43,7 @@ body{
     margin-top:20px;
     margin-bottom:20px;
     float:left;
-    margin-left:16px;
+    margin-left:1px;
     font-weight:800;
     font-size:0.8em;
   }
@@ -71,4 +71,9 @@ body{
 
   .btn2:hover{ 
   background:#3594D2;
+  }
+  .loginheader{
+    margin-left:-20px;
+
+
   }

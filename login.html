@@ -7,6 +7,7 @@
     <!-- Footer icon -->
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/login.css">
+    <script type="text/javascript" src="js/login.js"></script>
 
 
 </head>
@@ -49,15 +50,14 @@
 
 
 
-      <form method="post" action="confirm-login.html">
+      <form name="form1" method="post" action="confirm-login.html">
       <div class="box">
-      <h1>&nbsp;&nbsp;&nbsp;&nbsp;Login</h1>
+      <h1 class="loginheader">Login</h1>
+      <input  name='text1' class="email" placeholder="email"/>
 
-      &nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
+      <input type="password" id="psw" name="psw" class="email" placeholder="********" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 
-      &nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
-
-      <input type="submit" value="Sign In" class ="btn">
+      <input type="submit" value="Sign In" class ="btn" onclick="ValidateEmail(document.form1.text1)">
       <input type="submit" value="Sign Up" class ="btn2">
 
       </div> <!-- End Box -->
