@@ -6,7 +6,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/hovereffects.css">
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
     <!-- Footer icon -->
     <link rel="stylesheet" href="css/footer.css">
 
@@ -44,75 +43,94 @@
   <div class="content">
     <div class="content_resize">
      <div class="mainbar">
-      <div class="view view-first">
-        <img src="images/slide11.jpg" class="scale-down" />
-        <div class="mask">
-          <h2>Inception</h2>
-          <p>Dom Cobb (Leonardo DiCaprio) is a thief with the rare ability to enter people's dreams and steal their secrets from..</p>
-          <a href="#" class="info">Read More</a>
-        </div>
-      </div>
+       <div class="cImages">
 
-      <div class="view view-second">
-          <img src="images/slide22.jpg" class="scale-down" />
-          <div class="mask"></div>
-          <div class="content">
-            <h2>Deadpool 2</h2>
-            <p>Foul-mouthed mutant mercenary Wade Wilson (AKA. Deadpool), brings together a team of..</p>
-            <a href="#" class="info">Read More</a>
+         <div class="view view-first">
+           <img src="images/slide11.jpg" class="scale-down" />
+           <div class="mask">
+             <h2>Inception</h2>
+             <p>Dom Cobb (Leonardo DiCaprio) is a thief with the rare ability to enter people's dreams and steal their secrets from..</p>
+             <a href="#" class="info">Read More</a>
+           </div>
+         </div>
+
+         <div class="view view-second">
+           <img src="images/slide22.jpg" class="scale-down" />
+           <div class="mask"></div>
+            <div class="content">
+              <h2>Deadpool 2</h2>
+              <p>Foul-mouthed mutant mercenary Wade Wilson (AKA. Deadpool), brings together a team of..</p>
+              <a href="#" class="info">Read More</a>
+            </div>
+          </div>
+
+
+          <div class="view view-second">
+            <img src="images/slide33.jpg" class="scale-down"/>
+            <div class="mask"></div>
+            <div class="content">
+              <h2 id="testimonials">Venom</h2>
+              <p>&ldquo;Journalist Eddie Brock is trying to take down Carlton Drake, the notorious and brilliant founder of the Life Foundation... &rdquo;</p>
+              <a onclick="dp2();" class="info">Read More</a>
+            </div>
           </div>
         </div>
+        <div class="clr"></div>
 
+        <div class="article">
+          <div class="jtext">
 
-  <div class="view view-second">
-  <img src="images/slide33.jpg" class="scale-down" />
-  <div class="mask"></div>
-  <div class="content">
-    <h2 id="testimonials">Venom</h2>
-    <p>&ldquo;Journalist Eddie Brock is trying to take down Carlton Drake, the notorious and brilliant founder of the Life Foundation... &rdquo;</p>
-    <a onclick="dp2();" class="info">Read More</a>
-  </div>
-</div>
+            <h2>Click on the movie names to read more about them</h2>
+              <h3 id="incp" onclick="expandText(this.id)">Inception</h3>
+              <p id="incp1" hidden>Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state, when the mind is at its most vulnerable. Cobb's rare ability has made him a coveted player in this treacherous new world of corporate espionage, but it has also made him an international fugitive and cost him everything he has ever loved. Now Cobb is being offered a chance at redemption. One last job could give him his life back but only if he can accomplish the impossible - inception. Instead of the perfect heist, Cobb and his team of specialists have to pull off the reverse: their task is not to steal an idea but to plant one. If they succeed, it could be the perfect crime. But no amount of careful planning or expertise can prepare the team for the dangerous enemy that seems to predict their every move. An enemy that only Cobb could have seen coming.</P>
 
-    </div>
+              <h3 id="dp2" onclick="expandText(this.id)">Deadpool 2</h3>
+              <p id="dp21" hidden>After losing Vanessa (Morena Baccarin), the love of his life, 4th-wall breaking mercenary Wade Wilson aka Deadpool (Ryan Reynolds) must assemble a team and protect a young, full-figured mutant Russell Collins aka Firefist (Julian Dennison) from Cable (Josh Brolin), a no-nonsense, dangerous cyborg from the future, and must also learn the most important lesson of all: to be part of a family again.></P>
 
-    <!-- The Modal -->
-    <div id="vModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close">&times;</span>
-          <center><h2>Venom</h2></center>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the Modal Body</p>
+              <h3 id="vnm" onclick="expandText(this.id)">Venom</h3>
+              <p id="vnm1" hidden>Investigative journalist Eddie Brock attempts a comeback following a scandal, but accidentally becomes the host of an alien symbiote that gives him a violent super alter-ego: Venom. Soon, he must rely on his newfound powers to protect the world from a shadowy organisation looking for a symbiote of their own.</p>
+            </div>
+          </div>
+
+      </div>
+
+      <!-- The Modal -->
+      <div id="vModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <center><h2>Venom</h2></center>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div id="dModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close">&times;</span>
-          <center><h2>Deadpool 2</h2></center>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the Modal Body</p>
-        </div>
-      </div>
-    </div>
-    <div id="iModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close">&times;</span>
-          <center><h2>Inception</h2></center>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the Modal Body</p>
+      <div id="dModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <center><h2>Deadpool 2</h2></center>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+          </div>
         </div>
       </div>
-    </div>
+      <div id="iModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <center><h2>Inception</h2></center>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+          </div>
+        </div>
+      </div>
 
 
 
@@ -160,7 +178,7 @@
                   ·
                   <a href="#">Lee - n12345678</a>
                   ·
-                  <a href="#">Elias - n01114446</a>
+                  <a href="#">Elias Sabbagh - n01114446</a>
             </p>
             <p class="footer-company-name">CineHub &copy; 2019</p>
 		  	</div>

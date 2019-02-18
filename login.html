@@ -53,9 +53,9 @@
       <form name="form1" method="post" action="confirm-login.html">
       <div class="box">
       <h1 class="loginheader">Login</h1>
-      <input  name='text1' class="email" placeholder="email"/>
+      <input  name='text1' class="email" placeholder="email" title="Must be proper email format with no spaces or special characters" required/>
 
-      <input type="password" id="psw" name="psw" class="email" placeholder="********" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+      <input type="password" id="psw" name="psw" class="email" placeholder="********" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
 
       <input type="submit" value="Sign In" class ="btn" onclick="ValidateEmail(document.form1.text1)">
       <input type="submit" value="Sign Up" class ="btn2">
@@ -117,7 +117,7 @@
                   ·
                   <a href="#">Lee - n12345678</a>
                   ·
-                  <a href="#">Elias - n01114446</a>
+                  <a href="#">Elias Sabbagh - n01114446</a>
             </p>
             <p class="footer-company-name">CineHub &copy; 2019</p>
 		  	</div>

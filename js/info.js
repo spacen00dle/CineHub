@@ -19,3 +19,14 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function expandText(id) {
+  hdn = id+1
+  if(id=="incp"){
+    document.getElementById(hdn).hidden = false;
+  }else if(id=="dp2"){
+    document.getElementById(hdn).hidden = false;
+  }else{
+    document.getElementById(hdn).hidden = false;
+  }
+}
